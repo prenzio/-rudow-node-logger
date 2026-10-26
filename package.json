@@ -13,10 +13,10 @@
   "homepage": "https://rudow.ai/docs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prenzio/rudow-node-logger.git"
+    "url": "git+https://github.com/prenzio/-rudow-node-logger.git"
   },
   "bugs": {
-    "url": "https://github.com/prenzio/rudow-node-logger/issues"
+    "url": "https://github.com/prenzio/-rudow-node-logger/issues"
   },
   "type": "module",
   "main": "dist/cjs/index.js",

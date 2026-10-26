@@ -1,0 +1,50 @@
+{
+  "name": "@rudow/node-logger",
+  "version": "0.7.0",
+  "description": "Rudow - AI that reads your logs and tells you what broke, in plain English. Read-only by design, flat pricing, free-forever tier.",
+  "keywords": [
+    "ai-observability",
+    "root-cause",
+    "mcp",
+    "plain-english"
+  ],
+  "license": "MIT",
+  "author": "Rudow <info@rudow.ai>",
+  "homepage": "https://rudow.ai/docs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prenzio/rudow-node-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prenzio/rudow-node-logger/issues"
+  },
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json && tsc -p tsconfig.cjs.json && echo '{\"type\":\"module\"}' > dist/esm/package.json && echo '{\"type\":\"commonjs\"}' > dist/cjs/package.json"
+  },
+  "dependencies": {
+    "pino-abstract-transport": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

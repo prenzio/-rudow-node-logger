@@ -1,0 +1,15 @@
+{
+  "name": "rudow-express-example",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Express smoke test for @rudow/node-logger",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@rudow/node-logger": "file:../..",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2"
+  }
+}
